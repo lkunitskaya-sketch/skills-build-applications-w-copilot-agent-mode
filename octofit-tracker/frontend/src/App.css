@@ -1,0 +1,93 @@
+:root {
+  --octofit-bg: #eef4ff;
+  --octofit-ink: #102a43;
+  --octofit-accent: #1f6feb;
+  --octofit-accent-soft: #dce9ff;
+  --octofit-table-head: #e8f0ff;
+}
+
+body {
+  background: radial-gradient(circle at 12% 8%, #ffffff 0%, var(--octofit-bg) 58%, #dbe9ff 100%);
+  color: var(--octofit-ink);
+}
+
+.app-hero {
+  background: linear-gradient(135deg, #ffffff 0%, #e0ecff 100%);
+  border-bottom: 1px solid #d9e5ff;
+}
+
+.app-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(16, 42, 67, 0.2);
+}
+
+.app-heading,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #12315e;
+}
+
+a,
+.btn-link,
+.nav-link {
+  color: #1d4f91;
+}
+
+a:hover,
+.nav-link:hover {
+  color: #143b72;
+}
+
+.navbar .nav-link {
+  color: #3b4a5a;
+  border: 1px solid transparent;
+}
+
+.navbar .nav-link.active {
+  background-color: var(--octofit-accent-soft);
+  color: var(--octofit-accent);
+  border-color: #bfd6ff;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #1f6feb, #2f81f7);
+  border-color: #1f6feb;
+}
+
+.btn-outline-primary {
+  color: #1f6feb;
+  border-color: #1f6feb;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  filter: brightness(0.95);
+}
+
+.table {
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: var(--octofit-table-head);
+}
+
+.table thead th {
+  color: #173b72;
+  white-space: nowrap;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: #f7faff;
+}
+
+.card {
+  background: #ffffff;
+}
